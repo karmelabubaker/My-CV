@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My CV Main Content</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: LavenderBlush;
+      color: black;
+      font-size: 25px;
+      margin: 0;
+    }
+
+    .header-container {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      margin-bottom: 20px;
+    }
+
+    .top-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .overlay-text h1 {
+      margin: 0;
+      font-size: 40ٍpx;
+      font-weight: bold;
+      font-family: 'Georgia', serif;
+    }
+
+    .overlay-text p {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Verdana', sans-serif;
+      color: Coral; /* بني فاتح */
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      color: DarkSlateGray;
+      margin-top: 40px;
+    }
+
+    .box {
+      border: 2px solid DarkSlateGray;
+      background-color:  VeryLightBlue;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 40px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div class="header-container" id="headerImage">
+    <img src="header-image.jpg" alt="Top Image" class="top-image">
+    <div class="overlay-text">
+      <h1>Karmel Abubaker</h1>
+      <p>Management Information Systems Student</p>
+<marquee direction="right" scrollamount="10" style="color:white;  padding-top: 50px; padding-bottom: 20px;font-size: 20pt;">Welcome to My CV Website</marquee>
+  
+    </div>
+</div>
+
+
+     
+   
+  
+  <a name="about"><h2>About me</h2></a>
+  <div class="box">
+    <p>  I am a third-year Management Information Systems student passionate about using technology to improve business operations. I have gained solid skills in databases, system analysis, and web development. I enjoy problem-solving, teamwork, and learning new skills to grow professionally. My goal is to build efficient systems that positively impact organizations and people.  </div>
+
+  <a name="skills"><h2>Skills</h2></a>
+  <div class="box">
+    <p>  
+I have strong technical and business skills from studying Management Information Systems. I can create clean web pages with HTML, CSS, and JavaScript.
+
+I’m good at analyzing problems and designing solutions through projects. I also have teamwork and communication skills, plus time management to handle tasks and deadlines.  </p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Database Management (e.g., MySQL, SQL Server)</li>
+      <li>Information Systems Analysis and Design</li>
+      <li>Programming Languages (e.g., Python, Java)</li>
+      <li>Proficient in Microsoft Office (Excel, Word, PowerPoint)</li>
+      <li>Strong Communication and Teamwork Skills</li>
+    </ul>
+  </div>
+
+  <a name="university"><h2>University Life</h2></a>
+  <div class="box">
+    <p> 
+I’m a senior MIS student at the Arab American University, preparing to graduate soon. Over the past three years, I gained strong skills in business and IT, focusing on analyzing needs and designing effective systems. I worked on projects that improved my technical and teamwork skills. I’m passionate about applying technology to solve real problems and ready to contribute after graduation. </p>
+  </div>
+
+ <a name="professional"><h2>Certificates</h2></a>
+<ul>
+  <li>
+    Photoshop & Illustrator 
+    <button onclick="toggleImage('img1')">Show/Hide</button>
+    <br>
+    <img id="img1" src="photoshop-certificate.jpg" alt="Photoshop Certificate" style="width:450px; display:none; margin-top:45px;">
+  </li>
+  <li>
+    Many Skills
+    <button onclick="toggleImage('img2')">Show/Hide</button>
+    <br>
+    <img id="img2" src="many-skills-certificate.jpg" alt="Many Skills Certificate" style="width:450px; display:none; margin-top:45px;">
+  </li>
+</ul>
+
+<script>
+  function toggleImage(id) {
+    const img = document.getElementById(id);
+    if (img.style.display === "none") {
+      img.style.display = "block";
+    } else {
+      img.style.display = "none";
+    }
+  }
+</script>
+
+  <a name="contact"><h2>Contact me</h2></a>
+  <div class="box">
+    <p> 
+Feel free to contact me via email or phone for any opportunities, collaborations, or questions about my skills and experience.
+
+
+    <p>Email: karmel.abubaker@example.com</p>
+    <p>Phone: +123-456-7890</p>
+  </div>
+
+</body>
+</html>
